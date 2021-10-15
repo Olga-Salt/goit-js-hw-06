@@ -9,4 +9,7 @@ function onInputClick(event) {
   const inputValue = event.currentTarget.value;
 
   refs.titleSpan.textContent = inputValue;
+  if (inputValue === "") {
+    refs.titleSpan.textContent = "Anonymous";
+  }
 }
